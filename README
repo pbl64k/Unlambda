@@ -1,0 +1,17 @@
+This is an Unlambda 1 interpreter written in Perl. As this was my
+(almost) first close brush with functional programming, it didn't really
+work out all that well. I tried to code it from the spec, without
+understanding everything that was going on, but the spec itself was aimed
+at people comfortable with lambda calculus and combinatory logic (which I
+certainly wasn't back then). To add insult to the injury, available
+implementations didn't quite agree with each other on how the language is
+supposed to work, so that test programs produced different - sometimes
+vastly so - results in different implementations. I wasn't quite up to
+analyzing Unlambda programs by hand to figure out what are their actual
+semantics (for that matter, the thought scares me still).
+
+My biggest - and rather glaring - failure, though, was leaving call/cc
+"for later" and failing to heed the inventor's advice to use CPS. When
+"later" came, I was way above my head in it. Trying to just hack
+something together without understanding the concepts I was dealing with
+wasn't particularly bright either.
