@@ -59,8 +59,6 @@ sub new
           }
           elsif ( $method eq $Language::Unlambda::F::ev )
           {
-#print"[".$X->id."] [".$Y->id."]\n";
-#<STDIN>;
             return ( $X -> ev ( ) -> ap ( $Y ) -> ev ( ) ) ;
           }
           elsif ( $method eq $Language::Unlambda::F::cp )
@@ -185,7 +183,6 @@ sub new
           {
             # ignored but MUST be evaluated!
             my $Y = shift -> ev ( ) ;
-#            my $Y = shift ;
             return ( $X -> ev ( ) ) ;
           }
         }
@@ -521,6 +518,7 @@ sub new
           elsif ( $method eq $Language::Unlambda::F::ap )
           {
             my $Z    = shift -> ev ( ) ;
+# I have no idea what is all of this about.
 my $Z0 = $Z -> cp ( ) ;
 #print"evaluating s2 ";
 #print"X: [".$X->id."] ";

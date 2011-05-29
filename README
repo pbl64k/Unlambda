@@ -1,6 +1,14 @@
-This is an Unlambda 1 interpreter written in Perl. As this was my
-(almost) first close brush with functional programming, it didn't really
-work out all that well. I tried to code it from the spec, without
+The definitive paper on Unlambda by David Madore titled The Unlambda
+Programming Language (and appropriately subtitled Unlambda: Your
+Functional Programming Language Nightmares Come True) can be found at:
+
+http://www.madore.org/~david/programs/unlambda/
+
+
+
+This is an Unlambda 1 interpreter written in Perl back in 2005. As this
+was my (almost) first close brush with functional programming, it didn't
+really work out all that well. I tried to code it from the spec, without
 understanding everything that was going on, but the spec itself was aimed
 at people comfortable with lambda calculus and combinatory logic (which I
 certainly wasn't back then). To add insult to the injury, available
@@ -15,3 +23,18 @@ My biggest - and rather glaring - failure, though, was leaving call/cc
 "later" came, I was way above my head in it. Trying to just hack
 something together without understanding the concepts I was dealing with
 wasn't particularly bright either.
+
+Run by:
+
+    perl u.pl
+
+Input the program and send an EOF (or just <file.unl in shell). The
+interpeter will stop and await a linebreak from the stdout after parsing.
+At this point the program will exist in memory as a collection of,
+HOLY COW!!! I completely forgot about this madness, blessed closures.
+Execution will commence after a linebreak, with potentially devastating
+results for your swap file.
+
+This should be good enough to execute anything not involving c, and may
+not even choke on smallish programs with continuations. The space
+requirements are somewhat outlandish in any case.

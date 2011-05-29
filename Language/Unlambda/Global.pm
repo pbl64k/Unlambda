@@ -10,7 +10,7 @@ use         strict ;
 
 
 our $PACKAGE  = 'Language::Unlambda::Global' ;
-our $VERSION  = '0.740' ;
+our $VERSION  = '0.741' ;
 
 our $unlambda = 'Unlambda1-alpha' ;
 

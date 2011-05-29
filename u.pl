@@ -1,9 +1,8 @@
-#!perl
-#!perl -w
 
 require 5.8.1 ;
 
-use strict ;
+use strict   ;
+use warnings ;
 
 use Language::Unlambda ;
 
@@ -30,8 +29,8 @@ my $file ;
 
 my $x = $u -> do ( $file ) ;
 
-print "\nUnlambda1-alpha intepreter v0.740\n" ;
-print "Copyright (c) Pavel Lepin 2005, 2006\n\n" ;
+print "\nUnlambda1-alpha intepreter v0.741\n" ;
+print "Copyright (c) Pavel Lepin 2005, 2006, 2011\n\n" ;
 
 print "Input : \n" ;
 print "{\n" . $file . "\n}" ;
