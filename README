@@ -29,7 +29,7 @@ Run by:
     perl u.pl
 
 Input the program and send an EOF (or just <file.unl in shell). The
-interpeter will stop and await a linebreak from the stdout after parsing.
+interpeter will stop and await a linebreak from the stdin after parsing.
 At this point the program will exist in memory as a collection of,
 HOLY COW!!! I completely forgot about this madness, blessed closures.
 Execution will commence after a linebreak, with potentially devastating
